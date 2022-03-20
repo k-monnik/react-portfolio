@@ -1,7 +1,13 @@
+import Nav from "./Nav"
+
 const Header = () => {
     return (
-        <div>
-
+        <div className="bg-gray-200">
+            <Nav />
+            <h1>
+                Kristen Monnik
+                <div>Front End Developer</div>
+            </h1>
         </div>
     )
 }
