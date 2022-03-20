@@ -3,8 +3,6 @@ import {
     FaReact,
     FaHtml5,
     FaCss3Alt,
-    FaBracketCurlyRight,
-    FaBracketCurly,
     FaJsSquare
 
 
