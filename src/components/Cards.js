@@ -1,4 +1,4 @@
-import { FaGithub, FaArrowRight, FaImage } from "react-icons/fa";
+import { FaGithub, FaImage } from "react-icons/fa";
 
 const Cards = () => {
 
