@@ -67,7 +67,7 @@ function Contact() {
                         value={toSend.reply_to}
                         onChange={handleChange}
                     />
-                    <button type='submit'>Submit</button>
+                    <button className="bg-blue-400 p-1 rounded-md cursor-pointer" type='submit'>Submit</button>
                 </form>
 
             </div>
