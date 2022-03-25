@@ -3,6 +3,7 @@ import { send } from "emailjs-com";
 
 
 
+
 function Contact() {
     const [toSend, setToSend] = useState({
         from_name: '',
@@ -69,6 +70,7 @@ function Contact() {
                     />
                     <button className="bg-blue-400 p-1 rounded-md cursor-pointer" type='submit'>Submit</button>
                 </form>
+
 
             </div>
         </div>
