@@ -1,6 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import Nav from './components/Nav';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <div className='font-Josefin'>
+        <Nav />
         <Header />
         <About />
         <Projects />
