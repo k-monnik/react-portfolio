@@ -10,7 +10,7 @@ import {
 
 const About = () => {
     return (
-        <div>
+        <div id="about">
             <h1>About Me</h1>
             <p>Hi! I'm Kristen, a front-end developer based in Montréal, Canada.</p>
             <p>I'm passionate about creating user-friendly websites and software projects...</p>
