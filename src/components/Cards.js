@@ -18,12 +18,18 @@ const Cards = () => {
                             React/Firebase/Tailwind
                         </p>
                         <p>
-                            Description
+                            A web app that lets the user create and share shopping lists that track item purchase dates, and estimates how soon they will need to be purchased again.
                         </p>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <button className="flex p-2 rounded-lg bg-blue-500">View Live<FaImage className="m-1 align-middle" /></button>
-                        <button className="flex p-2 rounded-lg bg-green-500">View Code<FaGithub className="m-1 align-middle" /></button>
+                        <button
+                            className="flex p-2 rounded-lg bg-blue-500"
+                            onClick={() => { window.open("https://tcl-38-smart-shopping-list.web.app/") }}
+                        >View Live<FaImage className="m-1 align-middle" /></button>
+                        <button
+                            className="flex p-2 rounded-lg bg-green-500"
+                            onClick={() => { window.open("https://github.com/the-collab-lab/tcl-38-smart-shopping-list") }}
+                        >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
                 </div>
 
@@ -39,12 +45,18 @@ const Cards = () => {
                             React/CSS
                         </p>
                         <p>
-                            Description
+                            A web app that fetches and displays images from NASA's Astronomy Photo of the Day API, and gives users the option to "like" or "unlike" the image.
                         </p>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <button className="flex p-2 rounded-lg bg-blue-500">View Live<FaImage className="m-1 align-middle" /></button>
-                        <button className="flex p-2 rounded-lg bg-green-500">View Code<FaGithub className="m-1 align-middle" /></button>
+                        <button
+                            className="flex p-2 rounded-lg bg-blue-500"
+                            onClick={() => { window.open("https://km-spacestagram.herokuapp.com/") }}
+                        >View Live<FaImage className="m-1 align-middle" /></button>
+                        <button
+                            className="flex p-2 rounded-lg bg-green-500"
+                            onClick={() => { window.open("https://github.com/k-monnik/apod-gram") }}
+                        >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
                 </div>
 
@@ -60,12 +72,18 @@ const Cards = () => {
                             React/CSS
                         </p>
                         <p>
-                            Description
+                            A web app that lets the user add, delete, and create reminders for tasks on their to-do list.
                         </p>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <button className="flex p-2 rounded-lg bg-blue-500">View Live<FaImage className="m-1 align-middle" /></button>
-                        <button className="flex p-2 rounded-lg bg-green-500">View Code<FaGithub className="m-1 align-middle" /></button>
+                        <button
+                            className="flex p-2 rounded-lg bg-blue-500"
+                            onClick={() => { window.open("https://monnik-react-task-tracker.netlify.app/") }}
+                        >View Live<FaImage className="m-1 align-middle" /></button>
+                        <button
+                            className="flex p-2 rounded-lg bg-green-500"
+                            onClick={() => { window.open("https://github.com/k-monnik/react-task-tracker") }}
+                        >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
                 </div>
 
