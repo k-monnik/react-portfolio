@@ -10,11 +10,15 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <div className='font-Josefin'>
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+
+      </div>
+
 
 
 

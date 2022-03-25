@@ -12,7 +12,7 @@ const Nav = () => {
             {/* mobile menu */}
             {/* content goes here */}
             <nav className="bg-blue-200 cursor-pointer flex flex-row justify-between">
-                <div className='font-bold text-purple-800 m-2'>
+                <div className='font-bold text-purple-800 m-2 font-Josefin'>
                     <HashLink smooth to='/#'>monnik.dev</HashLink>
                 </div>
                 <div>
