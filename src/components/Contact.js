@@ -38,7 +38,7 @@ function Contact() {
     return (
         <div id="contact" className="h-1/2">
             <p className="m-14 font-regular text-5xl flex justify-center">Let's chat!</p>
-            <div className="p-6 h-96 w-3/5 border border-blue-700 rounded flex justify-center mx-auto">
+            <div className="p-6 h-96 w-3/5 border border-blue-700 rounded flex justify-center mx-auto mb-16">
                 <form onSubmit={onSubmit}>
                     <div className="grid grid-cols-2 gap-4">
                         <div className="flex flex-col border border-blue-700 rounded">
