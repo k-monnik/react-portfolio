@@ -11,11 +11,15 @@ import { SiTailwindcss, SiFirebase, SiGit } from "react-icons/si";
 
 const About = () => {
     return (
-        <div id="about">
-            <h1 className='font-regular'>About Me</h1>
-            <p className='font-thin'>Hi! I'm Kristen, a front-end developer based in Montréal, Canada.</p>
-            <p>I'm passionate about creating user-friendly websites and software projects...</p>
-            <h2>Skills</h2>
+        <div id="about" className='h-screen'>
+            <h1 className='mt-48 mb-12 font-regular text-5xl flex justify-center content-center'>About Me</h1>
+            <div className='container mx-auto md:max-w-4xl '>
+                <p className='m-6 font-light text-3xl flex justify-center'>Hi! I'm Kristen, a front-end developer based in Montréal, Canada.</p>
+                <p className='mb-48 font-thin text-2xl flex justify-center'>I'm passionate about creating dynamic user experiences for websites and software projects, thinking outside the box to solve problems, and bringing design ideas to life on the web.
+                    I'm naturally curious, and perpetually working on improving my programming chops one project at a time. I'm currently seeking a full-time front-end/React developer role.</p>
+            </div>
+
+            <h2 className='m-12 font-regular text-4xl flex justify-center'>Skills</h2>
             <div className='flex flex-row mx-auto justify-center gap-6 text-5xl cursor-pointer'>
                 <div>
                     <FaHtml5 />
