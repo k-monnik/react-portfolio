@@ -7,14 +7,14 @@ const Cards = () => {
 
     return (
         <div className="m-12 grid grid-cols-1 md:grid-cols-3">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-ice text-black">
                 <img src={shoplist} alt="" className="" />
                 <div className="px-6 py-4">
                     <div className="font-bold text-blue-800 text-xl flex justify-center">
                         Smart Shopping List
                     </div>
                     <div>
-                        <p className="flex justify-center text-lg font-light mb-6">
+                        <p className="flex justify-center text-lg font-light text-ocean mb-6">
                             React/Firebase/Tailwind
                         </p>
                         <p className="text-normal font-thin mb-8">
@@ -23,11 +23,11 @@ const Cards = () => {
                     </div>
                     <div className="flex flex-row justify-center gap-12">
                         <button
-                            className="flex p-2 rounded-lg bg-blue-500"
+                            className="flex p-2 rounded-lg hover:bg-ocean"
                             onClick={() => { window.open("https://tcl-38-smart-shopping-list.web.app/") }}
                         >View Live<FaImage className="m-1 align-middle" /></button>
                         <button
-                            className="flex p-2 rounded-lg bg-green-500"
+                            className="flex p-2 rounded-lg focus:ring-1 focus:ring-ocean"
                             onClick={() => { window.open("https://github.com/the-collab-lab/tcl-38-smart-shopping-list") }}
                         >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
@@ -41,7 +41,7 @@ const Cards = () => {
                         Spacestagram
                     </div>
                     <div>
-                        <p className="flex justify-center text-lg font-light mb-6">
+                        <p className="flex justify-center text-lg font-light text-ocean mb-6">
                             React/CSS
                         </p>
                         <p className="text-normal font-thin mb-14">
@@ -68,7 +68,7 @@ const Cards = () => {
                         Task Tracker
                     </div>
                     <div>
-                        <p className="flex justify-center text-lg font-light mb-6">
+                        <p className="flex justify-center text-lg font-light text-plum mb-6">
                             React/CSS
                         </p>
                         <p className="text-normal font-thin mb-20">

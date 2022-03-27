@@ -11,7 +11,7 @@ import { SiTailwindcss, SiFirebase, SiGit } from "react-icons/si";
 
 const About = () => {
     return (
-        <div id="about" className='h-screen'>
+        <div id="about" className='h-screen bg-ice'>
             <h1 className='mt-48 mb-12 font-regular text-5xl flex justify-center content-center'>About Me</h1>
             <div className='container mx-auto md:max-w-4xl '>
                 <p className='m-6 font-light text-3xl flex justify-center'>Hi! I'm Kristen, a front-end developer based in Montréal, Canada.</p>
@@ -22,35 +22,35 @@ const About = () => {
             <h2 className='m-12 font-regular text-4xl flex justify-center'>Skills</h2>
             <div className='flex flex-row mx-auto justify-center gap-6 text-5xl cursor-pointer'>
                 <div>
-                    <FaHtml5 />
+                    <FaHtml5 className='' />
                     <p className='flex text-sm justify-center mt-4'>HTML</p>
                 </div>
                 <div>
-                    <FaCss3Alt />
+                    <FaCss3Alt className='' />
                     <p className='flex text-sm justify-center mt-4'>CSS</p>
                 </div>
                 <div>
-                    <FaJsSquare />
+                    <FaJsSquare className='' />
                     <p className='flex text-sm justify-center mt-4'>JavaScript</p>
                 </div>
                 <div>
-                    <FaReact />
+                    <FaReact className='' />
                     <p className='flex text-sm justify-center mt-4'>React</p>
                 </div>
                 <div>
-                    <FaBootstrap />
+                    <FaBootstrap className='' />
                     <p className='flex text-sm justify-center mt-4'>Bootstrap</p>
                 </div>
                 <div>
-                    <SiTailwindcss />
+                    <SiTailwindcss className='' />
                     <p className='flex text-sm justify-center mt-4'>Tailwind</p>
                 </div>
                 <div>
-                    <SiFirebase />
+                    <SiFirebase className='' />
                     <p className='flex text-sm justify-center mt-4'>Firebase</p>
                 </div>
                 <div>
-                    <SiGit />
+                    <SiGit className='' />
                     <p className='flex text-sm justify-center mt-4'>Git</p>
                 </div>
 

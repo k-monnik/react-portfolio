@@ -11,7 +11,7 @@ const Nav = () => {
             {/* contact nav  */}
             {/* mobile menu */}
             {/* content goes here */}
-            <nav className="sticky top-0 bg-blue-200 cursor-pointer flex flex-row justify-between">
+            <nav className="sticky top-0 bg-blue-200 cursor-pointer flex flex-row justify-between bg-ocean">
                 <div className='font-bold text-purple-800 m-2 font-Josefin'>
                     <HashLink smooth to='/#'>monnik.dev</HashLink>
                 </div>
