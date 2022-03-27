@@ -50,56 +50,59 @@ function Contact() {
                         <div className="px-10 pt-4 pb-8 bg-white">
                             <form onSubmit={onSubmit}>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="flex flex-col">
+                                    <div className="flex flex-col relative">
                                         <input
                                             type='text'
                                             name='from_name'
-                                            placeholder='Name'
+                                            placeholder=' '
                                             required
-                                            className="peer h-10 w-full border-b-2 border-silver text-gray-900 placeholder-transparent focus:outline-none focus:border-ocean"
+                                            className="peer h-10 w-full border-b-2 border-silver text-silver placeholder-transparent focus:outline-none focus:border-ocean"
                                             value={toSend.from_name}
                                             onChange={handleChange}
                                         />
-                                        <label htmlFor="name" className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Name</label>
+                                        <label htmlFor="name" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Name</label>
                                     </div>
-                                    <div className="flex flex-col">
+                                    <div className="flex flex-col relative">
                                         <input
                                             type='text'
                                             name='reply_to'
-                                            placeholder='Email'
+                                            placeholder=' '
                                             required
-                                            className="peer h-10 w-full border-b-2 border-silver text-gray-900 placeholder-transparent focus:outline-none focus:border-ocean"
+                                            className="peer h-10 w-full border-b-2 border-silver text-silver placeholder-transparent focus:outline-none focus:border-ocean"
                                             value={toSend.reply_to}
                                             onChange={handleChange}
                                         />
-                                        <label htmlFor="return email" className="absolute left-0 -top-3.5 text-gray-600 text-sm text-light transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Email</label>
+                                        <label htmlFor="return email" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Email</label>
                                     </div>
-                                    <div className="flex flex-col col-span-2">
+                                    <div className="flex flex-col col-span-2 relative">
                                         <input
                                             type='text'
                                             name='subject'
-                                            placeholder='Subject'
-                                            className="peer h-10 w-full border-b-2 border-silver text-gray-900 placeholder-transparent focus:outline-none focus:border-ocean"
+                                            placeholder=' '
+                                            className="peer h-10 w-full border-b-2 border-silver text-silver placeholder-transparent focus:outline-none focus:border-ocean"
                                             value={toSend.to_name}
                                             onChange={handleChange}
                                         />
-                                        <label htmlFor="subject" className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"></label>
+                                        <label htmlFor="subject" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Subject</label>
                                     </div>
-                                    <div className="flex flex-col col-span-2">
+                                    <div className="flex flex-col col-span-2 relative">
 
 
 
                                         {/* <textarea maxLength="500" rows="4" type="text" id="subject" name="subject" className="form-input px-3 py-2 rounded-md" required /> */}
-                                        <input
+                                        <textarea
                                             type='text'
                                             name='message'
-                                            placeholder='message'
+                                            maxLength="500"
+                                            rows="4"
+                                            id="message"
+                                            placeholder=' '
                                             required
-                                            className="peer h-10 w-full border-b-2 border-silver text-gray-900 placeholder-transparent focus:outline-none focus:border-ocean"
+                                            className="peer h-10 w-full border-b-2 border-silver text-silver placeholder-transparent focus:outline-none focus:border-ocean"
                                             value={toSend.message}
                                             onChange={handleChange}
-                                        />
-                                        <label htmlFor="message" className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Message</label>
+                                        ></textarea>
+                                        <label htmlFor="message" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Message</label>
                                     </div>
                                     <div className="flex justify-end py-2">
                                         <button className="bg-blue-400 p-1 rounded-md cursor-pointer text-xl" type='submit'>
