@@ -38,11 +38,11 @@ function Contact() {
     return (
         <div id="contact" className="min-h-screen bg-mint flex justify-center items-center">
             <div className="p-8 flex-1">
-                <p className="m-14 font-regular text-5xl flex justify-center">Let's chat!</p>
-                <div className="w-3/5 bg-white rounded-3xl mx-auto overflow-hidden shadow-xl">
+                <p className="m-14 font-regular text-5xl text-midnight flex justify-center">Let's chat!</p>
+                <div className="w-3/5 max-w-4xl bg-white rounded-3xl mx-auto overflow-hidden shadow-xl">
                     {/* className="relative h-48 bg-ocean rounded-bl-3xl" */}
                     <div>
-                        <svg id="visual" viewBox="0 0 320 102" width="320" height="102" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 33L6 32.2C12 31.3 24 29.7 35.8 29.3C47.7 29 59.3 30 71.2 37.7C83 45.3 95 59.7 106.8 66.3C118.7 73 130.3 72 142.2 64.5C154 57 166 43 177.8 42.8C189.7 42.7 201.3 56.3 213.2 62.5C225 68.7 237 67.3 248.8 65.5C260.7 63.7 272.3 61.3 284.2 58.2C296 55 308 51 314 49L320 47L320 0L314 0C308 0 296 0 284.2 0C272.3 0 260.7 0 248.8 0C237 0 225 0 213.2 0C201.3 0 189.7 0 177.8 0C166 0 154 0 142.2 0C130.3 0 118.7 0 106.8 0C95 0 83 0 71.2 0C59.3 0 47.7 0 35.8 0C24 0 12 0 6 0L0 0Z" fill="#006466" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+                        <svg id="visual" viewBox="0 0 900 102" width="900" height="102" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 66L12.5 64.2C25 62.3 50 58.7 75 53C100 47.3 125 39.7 150 41.3C175 43 200 54 225 58.8C250 63.7 275 62.3 300 55.5C325 48.7 350 36.3 375 34.3C400 32.3 425 40.7 450 46C475 51.3 500 53.7 525 50.7C550 47.7 575 39.3 600 36.2C625 33 650 35 675 40.8C700 46.7 725 56.3 750 60.5C775 64.7 800 63.3 825 58.7C850 54 875 46 887.5 42L900 38L900 0L887.5 0C875 0 850 0 825 0C800 0 775 0 750 0C725 0 700 0 675 0C650 0 625 0 600 0C575 0 550 0 525 0C500 0 475 0 450 0C425 0 400 0 375 0C350 0 325 0 300 0C275 0 250 0 225 0C200 0 175 0 150 0C125 0 100 0 75 0C50 0 25 0 12.5 0L0 0Z" fill="#006466" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
                         {/* 320x102 */}
                     </div>
                     <div>
@@ -60,7 +60,7 @@ function Contact() {
                                             value={toSend.from_name}
                                             onChange={handleChange}
                                         />
-                                        <label htmlFor="name" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Name</label>
+                                        <label htmlFor="name" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight  peer-focus:text-sm">Name</label>
                                     </div>
                                     <div className="flex flex-col relative">
                                         <input
@@ -104,8 +104,8 @@ function Contact() {
                                         ></textarea>
                                         <label htmlFor="message" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Message</label>
                                     </div>
-                                    <div className="flex justify-end py-2">
-                                        <button className="bg-blue-400 p-1 rounded-md cursor-pointer text-xl" type='submit'>
+                                    <div className="flex justify-center col-span-2 py-2">
+                                        <button className="bg-ocean  p-4 block w-2/5 rounded-xl cursor-pointer text-center text-white text-xl" type='submit'>
                                             Submit
                                         </button>
                                     </div>
