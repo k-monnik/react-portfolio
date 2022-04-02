@@ -11,19 +11,19 @@ const Nav = () => {
             {/* contact nav  */}
             {/* mobile menu */}
             {/* content goes here */}
-            <nav className="sticky top-0 bg-blue-200 cursor-pointer flex flex-row justify-between bg-ocean">
-                <div className='font-bold text-purple-800 m-2 font-Josefin'>
+            <nav className="sticky top-0 cursor-pointer flex flex-row justify-between bg-ocean text-mint">
+                <div className='font-bold m-2 font-Josefin'>
                     <HashLink smooth to='/#'>monnik.dev</HashLink>
                 </div>
                 <div>
                     <ul className='flex flex-row gap-20 mr-8'>
-                        <li>
+                        <li className='pt-2 hover:border-b-4 hover:border-midnight'>
                             <HashLink smooth to={'/page#about'}>About</HashLink>
                         </li>
-                        <li>
+                        <li className='py-2 hover:border-b-4 hover:border-midnight'>
                             <HashLink smooth to={'/page#projects'}>Projects</HashLink>
                         </li>
-                        <li>
+                        <li className='py-2 hover:border-b-4 hover:border-midnight'>
                             <HashLink smooth to={'/page#contact'}>Contact</HashLink>
                         </li>
                     </ul>

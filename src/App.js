@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <div className='font-Josefin bg-mint'>
+      <div className='font-Josefin bg-mint min-w-screen'>
         <Nav />
         <Header />
         <About />
