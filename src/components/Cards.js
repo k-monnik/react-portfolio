@@ -6,7 +6,7 @@ import tasklist from "../assets/task-tracker-img.png";
 const Cards = () => {
 
     return (
-        <div className="m-12 grid grid-cols-1 md:grid-cols-3 md:gap-6">
+        <div className="m-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
             <div className="max-w-sm rounded overflow-hidden shadow-lg bg-ice text-black">
                 <img src={shoplist} alt="" className="" />
                 <div className="px-6 py-4">
@@ -14,20 +14,20 @@ const Cards = () => {
                         Smart Shopping List
                     </div>
                     <div>
-                        <p className="flex justify-center text-lg font-light text-ocean mb-6">
+                        <p className="flex justify-center text-lg font-light text-ocean mb-3 md:mb-6">
                             React/Firebase/Tailwind
                         </p>
-                        <p className="text-normal font-thin mb-8">
+                        <p className="text-normal tracking-tighter md:tracking-normal font-thin mb-2 md:mb-8">
                             A web app designed with a chalkboard theme that lets the user create and share shopping lists that track item purchase dates, and estimates how soon they will need to be purchased again.
                         </p>
                     </div>
-                    <div className="flex flex-row justify-center gap-12">
+                    <div className="flex flex-row justify-center gap-1 md:gap-12">
                         <button
-                            className="flex p-2 border border-ocean rounded-lg hover:bg-ocean hover:text-white active:border-white"
+                            className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
                             onClick={() => { window.open("https://tcl-38-smart-shopping-list.web.app/") }}
                         >View Live<FaImage className="m-1 align-middle" /></button>
                         <button
-                            className="flex p-2 border border-ocean rounded-lg hover:bg-ocean hover:text-white active:border-white"
+                            className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
                             onClick={() => { window.open("https://github.com/the-collab-lab/tcl-38-smart-shopping-list") }}
                         >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
@@ -41,20 +41,20 @@ const Cards = () => {
                         Spacestagram
                     </div>
                     <div>
-                        <p className="flex justify-center text-lg font-light text-ocean mb-6">
+                        <p className="flex justify-center text-lg font-light text-ocean mb-3 md:mb-6">
                             React/CSS
                         </p>
-                        <p className="text-normal font-thin mb-14">
+                        <p className="text-normal tracking-tighter md:tracking-normal font-thin mb-2 md:mb-14">
                             A web app that fetches and displays images from NASA's Astronomy Photo of the Day API, and gives users the option to "like" or "unlike" the image.
                         </p>
                     </div>
-                    <div className="flex flex-row justify-center gap-12">
+                    <div className="flex flex-row justify-center gap-1 md:gap-12">
                         <button
-                            className="flex p-2 border border-ocean rounded-lg hover:bg-ocean hover:text-white active:border-white"
+                            className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
                             onClick={() => { window.open("https://km-spacestagram.herokuapp.com/") }}
                         >View Live<FaImage className="m-1 align-middle" /></button>
                         <button
-                            className="flex p-2 border border-ocean rounded-lg hover:bg-ocean hover:text-white active:border-white"
+                            className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
                             onClick={() => { window.open("https://github.com/k-monnik/apod-gram") }}
                         >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
@@ -68,20 +68,20 @@ const Cards = () => {
                         Task Tracker
                     </div>
                     <div>
-                        <p className="flex justify-center text-lg font-light text-ocean mb-6">
+                        <p className="flex justify-center text-lg font-light text-ocean mb-3 md:mb-6">
                             React/CSS
                         </p>
-                        <p className="text-normal font-thin mb-24">
+                        <p className="text-normal tracking-tighter md:tracking-normal font-thin mb-12 md:mb-24">
                             A web app that lets the user add, delete, and create reminders for tasks on their to-do list.
                         </p>
                     </div>
-                    <div className="flex flex-row justify-center gap-12">
+                    <div className="flex flex-row justify-center gap-1 md:gap-12">
                         <button
-                            className="flex p-2 border border-ocean rounded-lg hover:bg-ocean hover:text-white active:border-white"
+                            className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
                             onClick={() => { window.open("https://monnik-react-task-tracker.netlify.app/") }}
                         >View Live<FaImage className="m-1 align-middle" /></button>
                         <button
-                            className="flex p-2 rounded-lg border border-ocean hover:bg-ocean hover:text-white "
+                            className="flex p-2 rounded-lg text-sm md:text-base border border-ocean hover:bg-ocean hover:text-white "
                             onClick={() => { window.open("https://github.com/k-monnik/react-task-tracker") }}
                         >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
