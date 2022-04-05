@@ -39,7 +39,7 @@ function Contact() {
         <div id="contact" className="min-h-screen bg-mint flex justify-center items-center">
             <div className="p-8 flex-1">
                 <p className="m-14 font-regular text-5xl text-midnight flex justify-center">Let's chat!</p>
-                <div className="w-3/5 max-w-4xl bg-white rounded-3xl mx-auto overflow-hidden shadow-xl">
+                <div className="w-1/3 md:w-3/5 md:max-w-4xl bg-white rounded-3xl mx-auto overflow-hidden shadow-xl">
                     {/* className="relative h-48 bg-ocean rounded-bl-3xl" */}
                     <div>
                         <svg id="visual" viewBox="0 0 900 102" width="900" height="102" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 66L12.5 64.2C25 62.3 50 58.7 75 53C100 47.3 125 39.7 150 41.3C175 43 200 54 225 58.8C250 63.7 275 62.3 300 55.5C325 48.7 350 36.3 375 34.3C400 32.3 425 40.7 450 46C475 51.3 500 53.7 525 50.7C550 47.7 575 39.3 600 36.2C625 33 650 35 675 40.8C700 46.7 725 56.3 750 60.5C775 64.7 800 63.3 825 58.7C850 54 875 46 887.5 42L900 38L900 0L887.5 0C875 0 850 0 825 0C800 0 775 0 750 0C725 0 700 0 675 0C650 0 625 0 600 0C575 0 550 0 525 0C500 0 475 0 450 0C425 0 400 0 375 0C350 0 325 0 300 0C275 0 250 0 225 0C200 0 175 0 150 0C125 0 100 0 75 0C50 0 25 0 12.5 0L0 0Z" fill="#006466" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
@@ -50,7 +50,7 @@ function Contact() {
                         <div className="px-10 pt-4 pb-8 bg-white">
                             <form onSubmit={onSubmit}>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="flex flex-col relative">
+                                    <div className="flex flex-col col-span-2 md:col-span-1 relative">
                                         <input
                                             type='text'
                                             name='from_name'
@@ -62,7 +62,7 @@ function Contact() {
                                         />
                                         <label htmlFor="name" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight  peer-focus:text-sm">Name</label>
                                     </div>
-                                    <div className="flex flex-col relative">
+                                    <div className="flex flex-col col-span-2 md:col-span-1 relative">
                                         <input
                                             type='text'
                                             name='reply_to'
