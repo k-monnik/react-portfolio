@@ -2,7 +2,7 @@
 import { HashLink } from 'react-router-hash-link';
 import { FiMenu } from "react-icons/fi";
 
-const Nav = () => {
+const Nav = ({ toggle }) => {
     return (
         <>
             {/* navbar START */}
@@ -16,7 +16,7 @@ const Nav = () => {
                 <div className='font-bold m-2 font-Josefin'>
                     <HashLink smooth to='/#'>monnik.dev</HashLink>
                 </div>
-                <div className='px-6 mt-2 text-2xl md:hidden'>
+                <div className='px-6 mt-2 text-2xl md:hidden' onClick={toggle}>
                     <FiMenu />
                 </div>
 
