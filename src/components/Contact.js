@@ -12,6 +12,8 @@ function Contact() {
         reply_to: '',
     });
 
+    const [status, setStatus] = useState('');
+
     const onSubmit = (e) => {
         e.preventDefault();
         send(
@@ -23,6 +25,13 @@ function Contact() {
 
             .then((response) => {
                 console.log('SUCESS!', response.status, response.text);
+                setToSend({
+                    from_name: '',
+                    to_name: '',
+                    message: '',
+                    reply_to: '',
+                });
+                setStatus('SUCCESS');
             })
             .catch((err) => {
                 console.log('FAILED...', err);
@@ -34,6 +43,11 @@ function Contact() {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
+    const renderSuccessMessage = () => (
+        <div className="text-midnight text-sm md:text-lg  m-3 p-2 col-span-2 text-center">
+            <p>Your message has been sent. Thank you!</p>
+        </div>
+    )
 
     return (
         <div id="contact" className="min-h-screen bg-mint flex justify-center items-center">
@@ -77,7 +91,7 @@ function Contact() {
                                     <div className="flex flex-col col-span-2 relative">
                                         <input
                                             type='text'
-                                            name='subject'
+                                            name='to_name'
                                             placeholder=' '
                                             className="peer h-10 w-full border-b-2 border-silver text-silver placeholder-transparent focus:outline-none focus:border-ocean"
                                             value={toSend.to_name}
@@ -105,11 +119,11 @@ function Contact() {
                                         <label htmlFor="message" className="absolute left-0 -top-3.5 text-silver text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-silver peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-midnight peer-focus:text-sm">Message</label>
                                     </div>
                                     <div className="flex justify-center col-span-2 py-2">
-                                        <button className="bg-ocean  p-4 block w-2/5 rounded-xl cursor-pointer text-center text-white text-xl" type='submit'>
+                                        <button className="bg-ocean  p-4 block w-2/5 rounded-xl cursor-pointer text-center text-white text-xl active:ring-2 active:ring-midnight" type='submit'>
                                             Submit
                                         </button>
                                     </div>
-
+                                    {status && renderSuccessMessage()}
                                 </div>
 
                             </form>
