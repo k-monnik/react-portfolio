@@ -72,7 +72,7 @@ const Cards = () => {
                         <p className="flex justify-center text-lg font-light text-ocean mb-3 md:mb-6">
                             HTML/Tailwind/JavaScript
                         </p>
-                        <p className="text-normal tracking-tighter md:tracking-normal font-thin mb-12 md:mb-24">
+                        <p className="text-normal tracking-tighter md:tracking-normal font-thin mb-12 md:mb-16">
                             A pre-launch landing page for a digital product with an email registration form and custom validation message feature.
                         </p>
                     </div>

@@ -63,7 +63,7 @@ Features currently under development include dark mode, French translation toggl
 - [EmailJS](https://www.emailjs.com/) - Handy dandy email integration API that I used to connect my contact form to my email inbox.
 - [Haikei App](https://haikei.app/) - Fun tool used to create a unique svg to make my contact form more artsy.
 - [React Icons](https://react-icons.github.io/react-icons/) - An easy way to import icons into a React project
-- [Avatar Maker](hhttps://avatarmaker.com/) - I used this to make my avatar for the hero section.
+- [Avatar Maker](https://avatarmaker.com/) - I used this to make my avatar for the hero section.
 - [Coolors](https://coolors.co/) - This is a really helpful tool when trying to design a color palette for a project. There's also a contrast checker tool to ensure your color combinations are accessible.
 
 ## Author
