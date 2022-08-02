@@ -79,7 +79,7 @@ const Cards = () => {
                     <div className="flex flex-row justify-center gap-1 md:gap-12">
                         <button
                             className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
-                            onClick={() => { window.open("https://gregarious-smakager-02166e.netlify.app/") }}
+                            onClick={() => { window.open("https://km-maker-landing.netlify.app") }}
                         >View Live<FaImage className="m-1 align-middle" /></button>
                         <button
                             className="flex p-2 rounded-lg text-sm md:text-base border border-ocean hover:bg-ocean hover:text-white "
