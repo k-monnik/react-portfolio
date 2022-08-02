@@ -20,7 +20,7 @@ Responsive website showcasing software development projects and features an emai
 
 ### Screenshot
 
-![](src/assets/new-portfolio-img.png)
+![](src/assets/portfolio-img-new.png)
 
 
 ### Links
