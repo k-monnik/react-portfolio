@@ -1,7 +1,8 @@
 import { FaGithub, FaImage } from "react-icons/fa";
 import shoplist from "../assets/shoplist-img.png";
 import spacepic from "../assets/space-img.png";
-import tasklist from "../assets/task-tracker-img.png";
+// import tasklist from "../assets/task-tracker-img.png";
+import makerPage from "../assets/maker-landing-img.jpg";
 
 const Cards = () => {
 
@@ -62,27 +63,27 @@ const Cards = () => {
 
             </div>
             <div className="max-w-sm rounded overflow-hidden shadow-lg bg-ice text-black">
-                <img src={tasklist} alt="" className="w-full" />
+                <img src={makerPage} alt="" className="" />
                 <div className="px-6 py-4">
                     <div className="font-bold text-blue-800 text-xl flex justify-center">
-                        Task Tracker
+                        Maker Landing Page
                     </div>
                     <div>
                         <p className="flex justify-center text-lg font-light text-ocean mb-3 md:mb-6">
-                            React/CSS
+                            HTML/Tailwind/JavaScript
                         </p>
                         <p className="text-normal tracking-tighter md:tracking-normal font-thin mb-12 md:mb-24">
-                            A web app that lets the user add, delete, and create reminders for tasks on their to-do list.
+                            A pre-launch landing page for a digital product with an email registration form and custom validation message feature.
                         </p>
                     </div>
                     <div className="flex flex-row justify-center gap-1 md:gap-12">
                         <button
                             className="flex p-2 border border-ocean rounded-lg text-sm md:text-base hover:bg-ocean hover:text-white active:border-white"
-                            onClick={() => { window.open("https://monnik-react-task-tracker.netlify.app/") }}
+                            onClick={() => { window.open("https://gregarious-smakager-02166e.netlify.app/") }}
                         >View Live<FaImage className="m-1 align-middle" /></button>
                         <button
                             className="flex p-2 rounded-lg text-sm md:text-base border border-ocean hover:bg-ocean hover:text-white "
-                            onClick={() => { window.open("https://github.com/k-monnik/react-task-tracker") }}
+                            onClick={() => { window.open("https://github.com/k-monnik/maker-landing-page") }}
                         >View Code<FaGithub className="m-1 align-middle" /></button>
                     </div>
                 </div>
