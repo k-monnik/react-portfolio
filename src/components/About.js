@@ -17,7 +17,7 @@ const About = () => {
                 <div className='container mx-auto md:max-w-4xl '>
                     <p className='px-4 md:px-0 m-2 md:m-6 font-light text-xl md:text-3xl flex justify-center'>Hi! I'm Kristen, a front-end developer based in Montréal, Canada.</p>
                     <p className='px-6 md:px-0 mb-16 m:mb-48 font-thin text-lg leading-tight md:leading-normal tracking-tighter md:tracking-normal md:text-2xl flex justify-center'>I'm passionate about creating dynamic user experiences for websites and software projects, thinking outside the box to solve problems, and bringing design ideas to life on the web.
-                        I'm naturally curious, and perpetually working on improving my programming chops one project at a time. I'm currently seeking a full-time front-end/React developer role.</p>
+                    </p>
                 </div>
             </div>
 
